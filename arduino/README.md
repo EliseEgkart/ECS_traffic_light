@@ -28,7 +28,7 @@
    - **시리얼 출력**: LED 밝기, 모드, LED ON/OFF 상태를 일정 주기로 출력하여 디버깅 및 모니터링에 활용할 수 있습니다.
 
 6. **가변저항**  
-   - `analogRead(POTENTIOMETER)`를 통해 0~1023 범위의 값을 읽고, `map()` 함수로 0~255 범위의 밝기(`brightness`)로 변환합니다.  
+   - `analogRead(POTENTIOMETER)`를 통해 0-1023 범위의 값을 읽고, `map()` 함수로 0-255 범위의 밝기(`brightness`)로 변환합니다.  
    - 이를 통해 LED 밝기를 실시간으로 제어할 수 있습니다.
 
 ---
