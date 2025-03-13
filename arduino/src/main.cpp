@@ -40,9 +40,9 @@ enum TrafficLight_State {
 volatile TrafficLight_State currentState = BLINK_RED;
 
 // 각 상태의 유지 시간
-unsigned int intervalRed    = 2000;
-unsigned int intervalYellow = 500;
-unsigned int intervalGreen  = 2000;
+unsigned int intervalRed    = 2000;     // 초기 BLINK_RED     유지시간
+unsigned int intervalYellow = 500;      // 초기 BLINK_YELLOW  유지시간
+unsigned int intervalGreen  = 2000;     // 초기 BLINK_GREEN   유지시간
 unsigned int intervalFlick  = 1000 / 6; // 1초 동안 3회 깜빡이기 위해
 
 // 상태 전이를 위한 타이밍 변수
