@@ -13,7 +13,7 @@ let latestData = "";
 let brightnessValue = "";  // 시리얼 데이터에서 추출한 밝기 값 (문자열)
 let modeValue = "";        // 시리얼 데이터에서 추출한 모드 정보 (문자열)
 // LED 상태 배열: [red, yellow, green] 각 값은 0 또는 1로 LED의 OFF/ON 상태를 나타냄
-let ledState = [0, 0, 0];  
+let ledState = [0, 0, 0];
 
 // HTML 요소 참조용 변수 선언
 let connectButton; // 시리얼 연결 버튼
