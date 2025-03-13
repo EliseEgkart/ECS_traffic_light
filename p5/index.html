@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Traffic Light Controller</title>
+    <!-- p5.js 라이브러리 (DOM 버전 포함) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.dom.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Traffic Light Controller</h1>
+
+      <!-- 신호등 인디케이터 (가로 배치) -->
+      <div class="traffic-light-indicators">
+        <div id="red-indicator" class="circle"></div>
+        <div id="yellow-indicator" class="circle"></div>
+        <div id="green-indicator" class="circle"></div>
+      </div>
+
+      <button id="connectButton" class="connect-button">Connect Serial</button>
+      <p id="serialInfo" class="info">Waiting for data...</p>
+
+      <!-- Red Slider -->
+      <div class="slider-container">
+        <label for="rSlider">Red Duration (ms)</label>
+        <input type="range" id="rSlider" min="100" max="5000" value="2000" step="100" />
+        <div class="ticks">
+          <span class="tick" style="left: 0%;">100</span>
+          <span class="tick" style="left: 25%;">1500</span>
+          <span class="tick" style="left: 50%;">3000</span>
+          <span class="tick" style="left: 75%;">4500</span>
+          <span class="tick" style="left: 100%;">5000</span>
+        </div>
+      </div>
+
+      <!-- Yellow Slider -->
+      <div class="slider-container">
+        <label for="ySlider">Yellow Duration (ms)</label>
+        <input type="range" id="ySlider" min="100" max="5000" value="500" step="50" />
+        <div class="ticks">
+          <span class="tick" style="left: 0%;">100</span>
+          <span class="tick" style="left: 25%;">1500</span>
+          <span class="tick" style="left: 50%;">3000</span>
+          <span class="tick" style="left: 75%;">4500</span>
+          <span class="tick" style="left: 100%;">5000</span>
+        </div>
+      </div>
+
+      <!-- Green Slider -->
+      <div class="slider-container">
+        <label for="gSlider">Green Duration (ms)</label>
+        <input type="range" id="gSlider" min="100" max="5000" value="2000" step="100" />
+        <div class="ticks">
+          <span class="tick" style="left: 0%;">100</span>
+          <span class="tick" style="left: 25%;">1500</span>
+          <span class="tick" style="left: 50%;">3000</span>
+          <span class="tick" style="left: 75%;">4500</span>
+          <span class="tick" style="left: 100%;">5000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- p5.js 스케치 -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
