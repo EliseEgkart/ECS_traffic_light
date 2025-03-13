@@ -3,7 +3,7 @@
 ## 시연 영상
 아래 링크를 통해 신호등 프로젝트의 실제 동작 영상을 확인할 수 있습니다.
 
->[![Video Label](http://img.youtube.com/vi/O_3jzSIpDpo/0.jpg)](https://youtu.be/O_3jzSIpDpo)
+[![Video Label](http://img.youtube.com/vi/O_3jzSIpDpo/0.jpg)](https://youtu.be/O_3jzSIpDpo)
 
 
 ---
@@ -48,8 +48,11 @@
 > `pinMode(BUTTONx, INPUT_PULLUP);`으로 설정 시, 버튼이 눌리지 않았을 때는 핀 상태가 **HIGH**가 되고, 버튼을 누르면 **LOW**로 바뀝니다. 모든 버튼은 INPUT_PULLUP으로 설정합니다.
 > 
 > **OUTPUT 핀 모드 설명**  
-> `pinMode(LED_RED, OUTPUT);`와 같이 설정하면 해당 핀을 출력 모드로 사용합니다. LED 제어용 PWM 핀을 OUTPUT으로 지정하여 원하는 밝기를 출력할 수 있습니다.
-
+> `pinMode(LED_COLOR, OUTPUT);`와 같이 설정하면 해당 핀을 출력 모드로 사용합니다. LED 제어용 PWM 핀을 OUTPUT으로 지정하여 원하는 밝기를 출력할 수 있습니다.
+>
+> **가변저항 analogRead()**  
+> `analogRead(POTENTIOMETER);` 함수를 사용해 0~1023 범위의 값을 읽어들이며, 이를 `map()` 함수를 통해 0~255 범위의 LED 밝기나 다른 제어 파라미터로 변환할 수 있습니다.  
+> 예: `brightness = map(analogRead(A5), 0, 1023, 0, 255);`
 ---
 
 ## 소프트웨어 개요
