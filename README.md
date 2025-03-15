@@ -5,8 +5,8 @@
 
 [![Video Label](http://img.youtube.com/vi/O_3jzSIpDpo/0.jpg)](https://youtu.be/O_3jzSIpDpo)
 
-아래 링크는 저지연 테스트 영상입니다. 실제 동작에는 미러링으로 인한 지연이 없습니다.
-[영상 바로가기](https://youtube.com/shorts/vEpxeKrXdfU)
+[저지연 테스트 영상](https://youtube.com/shorts/vEpxeKrXdfU)입니다. 실제 동작에는 미러링으로 인한 지연이 없습니다.
+
 
 ---
 
