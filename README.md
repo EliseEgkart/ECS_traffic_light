@@ -5,6 +5,8 @@
 
 [![Video Label](http://img.youtube.com/vi/O_3jzSIpDpo/0.jpg)](https://youtu.be/O_3jzSIpDpo)
 
+아래 링크는 저지연 테스트 영상입니다. 실제 동작에는 미러링으로 인한 지연이 없습니다.
+[영상 바로가기](https://youtube.com/shorts/vEpxeKrXdfU)
 
 ---
 
@@ -51,7 +53,7 @@
 > `pinMode(LED_COLOR, OUTPUT);`와 같이 설정하면 해당 핀을 출력 모드로 사용합니다. LED 제어용 PWM 핀을 OUTPUT으로 지정하여 원하는 밝기를 출력할 수 있습니다.
 >
 > **가변저항 analogRead()**  
-> `analogRead(POTENTIOMETER);` 함수를 사용해 0~1023 범위의 값을 읽어들이며, 이를 `map()` 함수를 통해 0~255 범위의 LED 밝기나 다른 제어 파라미터로 변환할 수 있습니다.  
+> `analogRead(POTENTIOMETER);` 함수를 사용해 0-1023 범위의 값을 읽어들이며, 이를 `map()` 함수를 통해 0-255 범위의 LED 밝기나 다른 제어 파라미터로 변환할 수 있습니다.  
 > 예: `brightness = map(analogRead(A5), 0, 1023, 0, 255);`
 ---
 
